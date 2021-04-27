@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("JynLeazy/train-schedule")
+                    app = docker.build("jynleazy/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
